@@ -1,8 +1,12 @@
 package com.liuyq.thread.thread67;
 
 import com.google.common.collect.ForwardingSet;
+import org.junit.Test;
 
 import java.util.*;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * Created by liuyq on 2018/2/28.
@@ -14,8 +18,9 @@ import java.util.*;
  */
 public class ObservableSet<E> extends ForwardingSet<E> {
 
+    public ObservableSet(){super(new HashSet<E>());}
 
-    public ObservableSet(Set<E> delegate) {
+    protected ObservableSet(Set<E> delegate) {
         super(delegate);
     }
 
@@ -35,9 +40,23 @@ public class ObservableSet<E> extends ForwardingSet<E> {
 
     private void notifyElementAdded(E element){
         synchronized (observers){
-            for(SetObserver<E> observer : observers){
+            for(SetObserver<E> observer : observers){ //这个时候正处于遍历列表的过程
                 observer.added(this, element);
             }
+        }
+    }
+
+    /**
+     * 将外来的方法的调用移除同步代码块,就可以避免异常和死锁
+     * @param element
+     */
+    private void notifyElementAddedNew(E element){
+        List<SetObserver<E>> snapshot = null;
+        synchronized (observers){
+            snapshot = new ArrayList<SetObserver<E>>(observers); //创建一个副本
+        }
+        for(SetObserver<E> observer : snapshot){
+            observer.added(this, element);
         }
     }
 
@@ -57,18 +76,60 @@ public class ObservableSet<E> extends ForwardingSet<E> {
         return result;
     }
 
-    public static void main(String[] agrs){
+        @Test
+        public void test1(){
         ObservableSet<Integer> set = new ObservableSet<>(new HashSet<Integer>());
 
         set.addObserver(new SetObserver<Integer>() {
             @Override
             public void added(ObservableSet<Integer> set, Integer element) {
                 System.out.println(element);
-                if(element == 23) set.removeObserver(this);
+                if(element == 23) set.removeObserver(this); //add方法遍历观察者列表的同时，又删除列表中的观察者，这是非法的
             }
         });
         for(int i = 0 ;i < 100; i++){
             set.add(i);
+        }
+    }
+
+    /**
+     * 这个方法会遇到死锁
+     *
+     * 因为线程池的get（）方法会等runable的线程执行完之后才会执行主线程的代码
+     *set.add(i); //主线程已经拿到了observers的锁
+     * s.removeObserver方法试图获取锁，就获取不到，所以一直就死锁了
+     *
+     */
+    @Test
+    public void test2(){
+        ObservableSet<Integer> set = new ObservableSet<>(new HashSet<Integer>());
+
+        set.addObserver(new SetObserver<Integer>() {
+            @Override
+            public void added(ObservableSet<Integer> set, Integer element) {
+                System.out.println(element);
+                if(element == 23){
+                    ExecutorService executorService = Executors.newSingleThreadExecutor();
+                    final SetObserver<Integer> observer = this;
+                    try {
+                        executorService.submit(new Runnable() {
+                            @Override
+                            public void run() {
+                                set.removeObserver(observer); //尝试获取锁，就获取不到，死锁了
+                            }
+                        }).get();
+                    }catch (ExecutionException ex){
+                        throw new AssertionError(ex.getCause());
+                    }catch (InterruptedException ex){
+                        throw new AssertionError(ex.getCause());
+                    }finally {
+                        executorService.shutdown();
+                    }
+                }
+            }
+        });
+        for(int i = 0 ;i < 100; i++){
+            set.add(i); //主线程已经拿到了observers的锁
         }
     }
 }
