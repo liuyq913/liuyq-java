@@ -7,6 +7,8 @@ import org.junit.Test;
  */
 public class IntegerTest {
 
+    int low = -123;
+
     final static int [] sizeTable = { 9, 99, 999, 9999, 99999, 999999, 9999999,
             99999999, 999999999, Integer.MAX_VALUE };
 
@@ -33,6 +35,15 @@ public class IntegerTest {
 
     @Test
     public void decodeTest(){
-        System.out.println(Integer.decode("-10"));
+        System.out.println(Integer.decode("10"));
+    }
+    @Test
+    public void valueofTest(){
+        //System.out.println(Integer.valueOf(10));
+        System.out.println(-low);
+    }
+    @Test
+    public void hashCodeTest(){
+        System.out.println(Integer.hashCode(112));
     }
 }
