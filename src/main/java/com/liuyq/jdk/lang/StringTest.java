@@ -45,8 +45,22 @@ public class StringTest {
     @Test
     public void testIndexOf(){
         String s = "hello world";
-        System.out.println(s.indexOf("w",4)); //当目标字符串是空串的时候，直接返回开始索引的值
+        //System.out.println(s.indexOf("w",4)); //当目标字符串是空串的时候，直接返回开始索引的值
        // System.out.println(s.indexOf("",-1)); //当开始索引值小于0的时候，返回0
 
+       // System.out.println(s.indexOf(50,1));
+        char[] chars = s.toCharArray();
+        for(int i=0;i<chars.length;i++){
+            if('h' == 104){
+                System.out.println("这");
+            }
+            System.out.println(chars[i]);
+        }
+    }
+
+    @Test
+    public void testConcat(){
+        String s = "liu";
+        System.out.println(s.concat("yu"));
     }
 }
