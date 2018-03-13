@@ -1,6 +1,9 @@
 package com.liuyq.jdk.lang;
 
+import com.google.common.collect.Lists;
 import org.junit.Test;
+
+import java.util.List;
 
 /**
  * Created by liuyq on 2018/3/8.
@@ -10,9 +13,9 @@ public class AbstractStringBuilderTest {
 
     private char[] value;
 
-    public AbstractStringBuilderTest(int lenght){
+    /*public AbstractStringBuilderTest(int lenght){
         value = new char[lenght];
-    }
+    }*/
     @Test
     public void lengAndCapacity(){
         char[] c = new char[12];
@@ -41,8 +44,25 @@ public class AbstractStringBuilderTest {
                 ? minCapacity : MAX_ARRAY_SIZE;
     }
     public static void main(String[] agrs) {
-        AbstractStringBuilderTest abstractStringBuilderTest = new AbstractStringBuilderTest(10);
-        System.out.println(abstractStringBuilderTest.newCapacity(21));
+        /*AbstractStringBuilderTest abstractStringBuilderTest = new AbstractStringBuilderTest(10);
+        System.out.println(abstractStringBuilderTest.newCapacity(21));*/
 
+        String s =new String("abc");
+        String s1 ="abc";
+        System.out.println(s1==s);
+        String[] agrsb= new String[4];
+        agrsb[0] = null;
     }
+
+    @Test
+    public void testStringBufferAppend(){
+        StringBuffer stringBuffer = new StringBuffer("hello");
+       System.out.println(stringBuffer.append(-1));
+    }
+    @Test
+    public void test(){
+        List<String> stringList = Lists.newArrayList();
+        stringList.add(null);
+    }
+
 }
