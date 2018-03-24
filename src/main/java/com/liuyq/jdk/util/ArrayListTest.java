@@ -14,4 +14,12 @@ public class ArrayListTest {
         System.out.println(list);
         System.out.println(list.size());
     }
+
+    @Test
+    public void test2(){
+        char[] ints = new char[10];
+        System.out.println(ints.length);
+        /*for(int i = 0;i<ints.length;i++)
+            System.out.println(ints[i]);*/
+    }
 }
