@@ -22,4 +22,15 @@ public class ArrayListTest {
         /*for(int i = 0;i<ints.length;i++)
             System.out.println(ints[i]);*/
     }
+
+    @Test
+    public void test3(){
+        String s = "123.0";
+        Integer i = s.indexOf(".");
+        if(!i.equals(-1)) {
+            s = s.substring(0, s.indexOf("."));
+        }
+        Integer integer = new Integer(s);
+        System.out.println(integer);
+    }
 }
