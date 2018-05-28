@@ -1,5 +1,6 @@
 package com.liuyq.jdk.lang;
 
+import com.alibaba.dubbo.common.utils.StringUtils;
 import org.junit.Test;
 
 /**
@@ -45,5 +46,36 @@ public class IntegerTest {
     @Test
     public void hashCodeTest(){
         System.out.println(Integer.hashCode(112));
+    }
+
+    @Test
+    public void test(){
+        String s = " 79008.00000  ";
+        System.out.println(stringTOIneger(s));
+
+    }
+
+    private static Integer stringTOIneger(String str){
+        if(StringUtils.isEmpty(str)) return 0;
+        //真的坑啊（先去前后空格），再截.之前的值
+        String kilm = str.trim();
+        Integer i = kilm.indexOf(".");
+        if(!i.equals(-1)) {
+            kilm = kilm.substring(0, kilm.indexOf("."));
+        }
+        Integer kilmInt = new Integer(kilm);
+        return kilmInt;
+    }
+    @Test
+    public void test3(){
+
+        System.out.println(String.format("%03d", 789));
+        int n2 = 9999999;
+        System.out.printf("%+(,d %n", n2);
+
+    }
+    @Test
+    public void test4(){
+        Integer i = new Integer("13800000000");
     }
 }
