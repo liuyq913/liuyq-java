@@ -1,7 +1,11 @@
 package com.liuyq.jdk.lang;
 
+import com.alibaba.dubbo.common.json.JSON;
+import com.alibaba.dubbo.common.json.ParseException;
 import com.alibaba.dubbo.common.utils.StringUtils;
 import org.junit.Test;
+
+import java.util.Date;
 
 /**
  * Created by liuyq on 2018/3/1.
@@ -77,5 +81,23 @@ public class IntegerTest {
     @Test
     public void test4(){
         Integer i = new Integer("13800000000");
+    }
+    @Test
+    public void test5(){
+        Long l = new Date().getTime();
+        System.out.println(l);
+    }
+    @Test
+    public void test6(){
+        String s = "2017-08-09";
+        String s1 = "2017-08-08";
+        System.out.println(s.compareTo(s1));
+    }
+
+    @Test
+    public void test7() throws ParseException {
+        String s = "{aa:12,bb:14}";
+        TestBo testBo = JSON.parse(s, TestBo.class);
+        System.out.println(testBo);
     }
 }
