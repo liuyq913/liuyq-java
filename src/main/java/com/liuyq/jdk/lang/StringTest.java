@@ -2,6 +2,11 @@ package com.liuyq.jdk.lang;
 
 import org.junit.Test;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 /**
  * Created by liuyq on 2018/3/2.
  */
@@ -147,6 +152,51 @@ import org.junit.Test;
     }
     @Test
     public void testTrim2(){
+        double a = 0.1;
+        System.out.println(new BigDecimal(a));
+        System.out.println(BigDecimal.valueOf(a));
+    }
 
+    @Test
+    public void test4(){
+        int rows = 700;
+        String str = "这红色isif噢爱好大Sof爱啊的说法我好的佛爱活动飞的是否哈德发到罚单的说法打法地方都是法儿童我让他";
+        List<String> stringList  = getStrList(str, 10);
+        System.out.println(stringList);
+    }
+
+    public static List<String> getStrList(String inputString, int length) {
+        int size = inputString.length() / length;
+        if (inputString.length() % length != 0) {
+            size += 1;
+        }
+        return getStrList(inputString, length, size);
+    }
+
+    public static List<String> getStrList(String inputString, int length,
+                                          int size) {
+        List<String> list = new ArrayList<String>();
+        for (int index = 0; index < size; index++) {
+            String childStr = substring(inputString, index * length,
+                    (index + 1) * length);
+            list.add(childStr);
+        }
+        return list;
+    }
+
+    public static String substring(String str, int f, int t) {
+        if (f > str.length())
+            return null;
+        if (t > str.length()) {
+            return str.substring(f, str.length());
+        } else {
+            return str.substring(f, t);
+        }
+    }
+
+    @Test
+    public void test1(){
+        Long l = 20180730061744L;
+        System.out.println(new Date(l));
     }
 }
