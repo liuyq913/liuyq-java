@@ -52,7 +52,7 @@ public class ConnectionPoolTest {
             }catch (Exception ex){}
             while(count >0 ){
                 try{
-                    Connection connection = pool.fetchConnection(100);
+                    Connection connection =  pool.fetchConnection(100);
                     if(connection!=null){
                         try {
                             connection.createStatement();
