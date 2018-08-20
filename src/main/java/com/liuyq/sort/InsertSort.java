@@ -20,7 +20,7 @@ public class InsertSort {
 
     @Test
     public void test(){
-        Integer[] list = new Integer[]{4,8,6,2,3,1,2};
-        insertSort(list);
+       String s= "0097257";
+        System.out.println(new Long(s));
     }
 }
