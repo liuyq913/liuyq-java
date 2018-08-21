@@ -48,7 +48,7 @@ public class ConnectionPoolTest {
 
         public void run(){
             try{
-                start.await();
+                start.await(); //start没有等到0之前一直等待
             }catch (Exception ex){}
             while(count >0 ){
                 try{

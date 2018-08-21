@@ -1,6 +1,5 @@
 package com.liuyq.thread.thread73;
 
-import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 
 import java.sql.Connection;
 import java.util.LinkedList;
@@ -50,35 +49,6 @@ public class ConnectionPool {
                 }
                 Connection result = null;
                 if (!pool.isEmpty()) {
-                    result = pool.removeFirst();
-                }
-                return result;
-            }
-        }
-    }
-
-    /**
-     * 在mils内无法获取久返回null
-     * @param mills
-     * @return
-     */
-    public Connection fetchConnection(long mills) throws InterruptedException {
-        synchronized (pool){
-            //完全超时
-            if(mills <= 0){
-                while(pool.isEmpty()){
-                    pool.wait();
-                }
-                return pool.removeFirst();
-            }else{
-                long future = System.currentTimeMillis() + mills;
-                long remaining = mills;
-                while(pool.isEmpty() && remaining>0){
-                    pool.wait(remaining);
-                    remaining = future - System.currentTimeMillis();
-                }
-                Connection result = null;
-                if(!pool.isEmpty()){
                     result = pool.removeFirst();
                 }
                 return result;
