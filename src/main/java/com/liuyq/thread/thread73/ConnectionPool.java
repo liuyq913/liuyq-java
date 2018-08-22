@@ -1,5 +1,6 @@
 package com.liuyq.thread.thread73;
 
+
 import java.sql.Connection;
 import java.util.LinkedList;
 
@@ -30,28 +31,24 @@ public class ConnectionPool {
             }
         }
     }
-    /**
-     * 在mils内无法获取久返回null
-     * @param mills
-     * @return
-     */
+         // 在mills内无法获取到连接，将会返回null
     public Connection fetchConnection(long mills) throws InterruptedException {
-        synchronized (pool){
-            //完全超时
-            if(mills <= 0){
-                while(pool.isEmpty()){
+        synchronized (pool) {
+        // 完全超时
+            if (mills <= 0) {
+                while (pool.isEmpty()) {
                     pool.wait();
                 }
                 return pool.removeFirst();
-            }else{
+            } else {
                 long future = System.currentTimeMillis() + mills;
                 long remaining = mills;
-                while(pool.isEmpty() && remaining>0){
+                while (pool.isEmpty() && remaining > 0) {
                     pool.wait(remaining);
                     remaining = future - System.currentTimeMillis();
                 }
                 Connection result = null;
-                if(!pool.isEmpty()){
+                if (!pool.isEmpty()) {
                     result = pool.removeFirst();
                 }
                 return result;

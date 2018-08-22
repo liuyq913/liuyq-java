@@ -1,7 +1,9 @@
 package com.liuyq.thread.thread73;
 
+import javax.management.remote.JMXConnectionNotification;
 import java.sql.Connection;
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.Exchanger;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -44,10 +46,9 @@ public class ConnectionPoolTest {
             this.notGot = notGot;
         }
 
-        @Override
         public void run(){
             try{
-                start.await(); //
+                start.await(); //start没有等到0之前一直等待
             }catch (Exception ex){}
             while(count >0 ){
                 try{
