@@ -1,7 +1,5 @@
 package com.liuyq.proxy;
 
-import javafx.scene.SubScene;
-
 import java.lang.reflect.Proxy;
 
 /**
@@ -20,6 +18,7 @@ public class demo {
         Subject subject1 = (Subject) Proxy.newProxyInstance(loader, infer, invocationHandler);
 
         String hello = subject1.SayHello("jiankunking");
+        subject1.SayGoodBye();
         System.out.println(hello);
 
     }
