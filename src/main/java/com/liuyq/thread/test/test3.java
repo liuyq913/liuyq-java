@@ -20,4 +20,15 @@ public class test3 {
         b.append("2");
         b = new StringBuilder("3");
     }
+
+    @org.junit.Test
+    public void test1(){
+        String s = "ab";
+        String s1 = "a";
+        String s2 = "b";
+        String s3 = "a"+"b";
+        String s4 = s1+s2;
+        System.out.println(s4 == s3);
+        System.out.println(s == s3);
+    }
 }
