@@ -6,7 +6,7 @@ package com.liuyq.thread.test;
 public class DubboTest {
     public static void main(String[] agrs) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-        Class clazz =  Class.forName("com.liuyq.thread.test.DoubleUtil", true, classLoader);
+        Class clazz =  Class.forName("com.liuyq.thread.TestReflect.DoubleUtil", true, classLoader);
         //System.out.println(clazz);
         DoubleUtil doubleUtil = (DoubleUtil) clazz.newInstance();
         System.out.println(clazz.getName());
