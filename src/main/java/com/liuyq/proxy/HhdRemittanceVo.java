@@ -1,5 +1,6 @@
 package com.liuyq.proxy;
 
+import java.lang.reflect.Constructor;
 import java.math.BigDecimal;
 
 /**
@@ -16,6 +17,7 @@ public class HhdRemittanceVo {
     private String hhdRemitteanceUserName ;//很好贷打款人名
     private String storeName;//门店名称
     private Integer status ;// 1 成功 0 失败
+    Object object;
 
     public BigDecimal getRepaymentAmount() {
         return repaymentAmount;
@@ -90,5 +92,17 @@ public class HhdRemittanceVo {
 
     public void setStoreName(String storeName) {
         this.storeName = storeName;
+    }
+
+
+
+
+    public static void main(String[] gars) throws NoSuchMethodException {
+        HhdRemittanceVo vo = new HhdRemittanceVo();
+        Class clazz = Thread.currentThread().getClass();
+        System.out.println("-----"+vo.getClass());
+        System.out.println("-----"+clazz);
+        Constructor constructor = clazz.getDeclaredConstructor((Class[])null);
+        System.out.println(constructor);
     }
 }
