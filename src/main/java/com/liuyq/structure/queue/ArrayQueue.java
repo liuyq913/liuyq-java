@@ -1,7 +1,5 @@
 package com.liuyq.structure.queue;
 
-import org.omg.PortableInterceptor.INACTIVE;
-
 /**
  * @author liuyq
  * @date 2019/6/5 0005 下午 21:31
@@ -29,12 +27,13 @@ public class ArrayQueue {
         if (tail == n) {
             if (head == 0) return false; //队列已满
 
+
             //反复出队入队操作之后，发现head指针和tail指针一直再往后移动
-            for (int i = head; head < tail; i++) {
+            for (int i = head; head < tail; i++) {  //将head
                 array[i - head] = array[head];
             }
             head = 0;
-            tail -=head;
+            tail -= head;
         }
 
         array[tail] = s;
