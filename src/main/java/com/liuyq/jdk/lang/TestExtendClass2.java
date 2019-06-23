@@ -16,5 +16,6 @@ public class TestExtendClass2 extends AbstractClass{
         TestExtendClass testExtendClass = new TestExtendClass();
         System.out.println("hello world " + testExtendClass.getM());
        // new AbstractClass();不同的下不能new  protected
+        System.out.println(TestExtendClass.class.getInterfaces());
     }
 }
