@@ -1,5 +1,9 @@
 package com.liuyq.structure.sort;
 
+import org.junit.Test;
+
+import java.util.Arrays;
+
 /**
  * Created by liuyq on 2019/7/7.
  * 归并排序
@@ -14,6 +18,9 @@ public class MergeSort {
     public void mergeSort(Integer[] list, int n) {
         //将数组按中间拆开，然后各个部分排序，然后再合并
         mergeSort_c(list, 0, n - 1);
+        System.out.println();
+        System.out.println("最终结果：");
+        Arrays.asList(list).stream().forEach(t -> System.out.print(t + ","));
     }
 
     /**
@@ -29,6 +36,10 @@ public class MergeSort {
 
         //拆分  去中间位置
         Integer p = (i + i1) / 2;
+        System.out.println();
+        System.out.println("初始list的为：");
+        Arrays.asList(Arrays.copyOfRange(list, i, i1 + 1)).stream().forEach(t -> System.out.print(t + ","));
+        System.out.println("从" + list[p] + "开始拆分");
         mergeSort_c(list, i, p);
         mergeSort_c(list, p + 1, i1);
 
@@ -37,12 +48,55 @@ public class MergeSort {
     }
 
     private void merge(Integer[] list, int i, Integer p, int i1) {
-        int a = p;
+        int a = i;
         int j = p + 1;
         int k = 0;
         //初始化一个temp 和list大小一样
         Integer[] temp = new Integer[i1 - i + 1];
-        while ()
+        //取拆分的数组的第一个元素进行比较，把小的放在temp数组里面
+        while (a <= p && j <= i1) {
+            if (list[a] < list[j]) {
+                temp[k++] = list[a++];
+            } else {
+                temp[k++] = list[j++];
+            }
+        }
 
+        //哪个数组还剩余值
+        int start = 0;
+        int end = 0;
+        if (a <= p) {
+            start = a;
+            end = p;
+        } else {
+            start = j;
+            end = i1;
+        }
+        //将剩余的放在temp里面
+        for (; start <= end; start++) {
+            temp[k++] = list[start];
+        }
+
+        //把temp拷贝到list[i...i1]里面;
+        for (int w = 0; w <= i1 - i; w++) {
+            list[i+w] = temp[w];
+        }
+        System.out.print("排序合并后：");
+        Arrays.asList(list).stream().forEach(e -> System.out.print(e + ","));
+        System.out.println();
+    }
+
+
+    @Test
+    public void test() {
+        Integer[] a = {44, 34, 55, 88, 9,111};
+        mergeSort(a, 6);
+    }
+
+    @Test
+    public void test2() {
+        for (int i = 0; i <= 1; i++) {
+            System.out.println(i);
+        }
     }
 }
