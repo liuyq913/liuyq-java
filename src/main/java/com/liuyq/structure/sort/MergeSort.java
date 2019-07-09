@@ -13,6 +13,9 @@ import java.util.Arrays;
  * <p>
  * 终止条件：
  * p >= r 不用再继续分解
+ *
+ *  时间复杂度 O（nlogn）  最好最坏平均d都是O（nlogn）
+ *  空间复杂都O(n)
  */
 public class MergeSort {
     public void mergeSort(Integer[] list, int n) {
@@ -54,8 +57,9 @@ public class MergeSort {
         //初始化一个temp 和list大小一样
         Integer[] temp = new Integer[i1 - i + 1];
         //取拆分的数组的第一个元素进行比较，把小的放在temp数组里面
+        // （这里如果这个数组中有相同的元素，那么将左边的优先放在temp里面，也就是说归并排序是稳定的）
         while (a <= p && j <= i1) {
-            if (list[a] < list[j]) {
+            if (list[a] <= list[j]) {
                 temp[k++] = list[a++];
             } else {
                 temp[k++] = list[j++];
