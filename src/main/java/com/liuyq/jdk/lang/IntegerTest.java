@@ -3,9 +3,11 @@ package com.liuyq.jdk.lang;
 import com.alibaba.dubbo.common.json.JSON;
 import com.alibaba.dubbo.common.json.ParseException;
 import com.alibaba.dubbo.common.utils.StringUtils;
+import com.google.common.collect.Lists;
 import org.junit.Test;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by liuyq on 2018/3/1.
@@ -99,5 +101,13 @@ public class IntegerTest {
         String s = "{aa:12,bb:14}";
         TestBo testBo = JSON.parse(s, TestBo.class);
         System.out.println(testBo);
+    }
+
+    @Test
+    public void test8(){
+        List<Integer> list = Lists.newArrayList();
+        List<String> list2 = Lists.newArrayList();
+
+        System.out.println(list);
     }
 }
