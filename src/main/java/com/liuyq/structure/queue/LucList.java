@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by liuyq on 2019/7/19.
  * <p>
- * 基于单项链表的luc算法实现
+ * 基于单项链表的luc缓存淘汰算法实现
  */
 public class LucList<T> {
 

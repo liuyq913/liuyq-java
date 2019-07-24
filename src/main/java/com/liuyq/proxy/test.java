@@ -3,6 +3,7 @@ package com.liuyq.proxy;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -44,5 +45,12 @@ public class test {
     public void test2(){
         String s ="http://private4s.upload.acar168.cn:5507/maintenance-file-service/private/download?fileID=13028,http://private4s.upload.acar168.cn:5507/maintenance-file-service/private/download?fileID=13029,http://private4s.upload.acar168.cn:5507/maintenance-file-service/private/download?fileID=13030,http://private4s.upload.acar168.cn:5507/maintenance-file-service/private/download?fileID=13031,http://private4s.upload.acar168.cn:5507/maintenance-file-service/private/download?fileID=13032,http://private4s.upload.acar168.cn:5507/maintenance-file-service/private/download?fileID=13033,http://private4s.upload.acar168.cn:5507/maintenance-file-service/private/download?fileID=13034,http://private4s.upload.acar168.cn:5507/maintenance-file-service/private/download?fileID=13037,http://private4s.upload.acar168.cn:5507/maintenance-file-service/private/download?fileID=13036,http://private4s.upload.acar168.cn:5507/maintenance-file-service/private/download?fileID=13038,http://private4s.upload.acar168.cn:5507/maintenance-file-service/private/download?fileID=13039,http://private4s.upload.acar168.cn:5507/maintenance-file-service/private/download?fileID=13040";
         System.out.println(s.length());
+    }
+
+    @Test
+    public void test3(){
+       String s = "1,3,4,5";
+       int i =2;
+        System.out.println(Arrays.asList(s.split(",")).contains(i+""));
     }
 }
