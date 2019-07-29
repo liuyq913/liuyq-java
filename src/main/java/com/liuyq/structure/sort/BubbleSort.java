@@ -56,8 +56,11 @@ public class BubbleSort {
     }
 
     public static void main(String[] agrs) {
-        Integer[] a = {3,5,4,1,2,6};
-        bubbleSort(a, a.length);
+        //Integer[] a = {3,5,4,1,2,6};
+        //bubbleSort(a, a.length);
+
+        String s= null;
+        Arrays.asList(s.split(",")).contains(2);
     }
 
 

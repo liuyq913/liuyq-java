@@ -7,6 +7,16 @@ package com.liuyq.structure.tree;
  *    中续遍历：inOrder(r) = print(r->left) --> print(r) --> print(r -> right)
  *    后续遍历：postOrder(r) = postOrder(r - > left) --> postOrder(r -> right) -->print(r)
  *
+ *
+ *                        7
+ *                       / \
+ *                      5   6
+ *                     / \  /
+ *                    4   2 1
+ *
+ *    数组存储   [null, 7 , 5 ,6 ,4, 2, 1]
+ *                0   1   2  3   4  5  6
+ *      下标为 i 的节点，那么 2*i 就是左子节点， 2*i+1就是右子节点
  *    几种遍历方式demo（数组存储)
  */
 public class TreeDemo {
@@ -27,6 +37,14 @@ public class TreeDemo {
     public int findLeft(Integer i){
         return 2*i;
     }
+
+
+    /**
+     * 找到父级节点
+     * @param i
+     * @return
+     */
+    public int findFather(Integer i ){return i/2;}
 
 
     /**
