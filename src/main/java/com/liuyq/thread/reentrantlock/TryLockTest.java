@@ -11,6 +11,10 @@ public class TryLockTest implements Runnable{
 
     @Override
     public void run() {
+
+        lock.lock();
+        lock.unlock();
+
         try {
             if (lock.tryLock(1, TimeUnit.SECONDS)) { // 等待1秒
                 Thread.sleep(2000);  //休眠2秒

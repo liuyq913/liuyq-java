@@ -1,37 +1,23 @@
 package com.liuyq.java8.fanxing;
 
-import java.util.ArrayList;
+import com.google.common.collect.Lists;
+
 import java.util.List;
 
 /**
  * Created by liuyq on 2019/8/3.
  */
 public class Test {
-
-    public static void main(String[] gars){
-        A a = new A();
-        List<A> list = new ArrayList<>();
-        list.add(a);
-        addA(list);
-
-
+    public static void main(String[] gars) {
         B b = new B();
-        List<B> listb = new ArrayList<>();
-        listb.add(b);
-        addB(listb);
 
+        b.setA(1);
+        b.setB(2);
+
+        List<B> list = Lists.newArrayList();
+        list.add(b);
+
+        b.setA(2);
+        list.add(b);
     }
-
-    public static void addA(List<A> list){
-        Common common = new Common();
-        common.setList(list);
-        common.print();
-    }
-
-    public static void addB(List<B> list){
-        Common common = new Common();
-        common.setList(list);
-        common.print();
-    }
-
 }
