@@ -8,7 +8,7 @@ import java.util.concurrent.locks.Lock;
 /**
  * Created by liuyq on 2019/8/22.
  * <p>
- * 同时一个两个线程获取到锁， 其他的都阻塞
+ * 同时一个两个线程获取到锁， 其他的都阻塞  能同时进入几个线程主要是看他的同步状态允许最大是多少
  */
 public class TwinsLock implements Lock {
 
@@ -81,5 +81,11 @@ public class TwinsLock implements Lock {
     @Override
     public Condition newCondition() {
         return null;
+    }
+
+
+    public static void main(String[] ahrs){
+        System.out.println(1 << 16);
+        System.out.println((1 << 16)-1);
     }
 }
