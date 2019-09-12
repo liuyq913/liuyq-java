@@ -51,7 +51,7 @@ public class BubbleSort {
                     flag = true;  // 表示有数据交换
                 }
             }
-            if (!flag) break;  // 没有数据交换，提前退出
+            if (!flag) break;  // 没有数据交换，提前退出 （已经完全有序了）
         }
     }
 

@@ -7,6 +7,9 @@ import java.util.Arrays;
 /**
  * Created by liuyq on 2019/7/7.
  * 选择排序 选择排序是不稳定的（稳定相当于排序前后，相等的元素前后位置是否发生变化，变化就说明是不稳定的，不变化就是稳定的）
+ *
+ * 选择排序也分  已排序区间和未排序区间， 但是每次排序会从未排序区间中找到最小的元素放到已排序区间的末尾
+ *
  */
 public class SelectionSort {
     /**
@@ -20,7 +23,7 @@ public class SelectionSort {
 
         for (int i = 0; i < n; i++) {
             int temp = list[i];
-            int min = list[i];
+            int min = list[i]; //默认以未排序的第一个元素为最小
             int a = 0;
             //找到未排序的最小值
             for (int j = i; j < n; j++) {
@@ -29,7 +32,7 @@ public class SelectionSort {
                     a = j;
                 }
             }
-            if(temp != min) {
+            if(temp != min) { //最小值就是为未排序的第一个元素  不交换
                 //最小值放在已排序的尾部
                 list[i] = min;
                 list[a] = temp;

@@ -14,8 +14,6 @@ import java.util.Arrays;
  */
 public class QuickSort {
 
-    private static int changeNum=0;
-
     public void quick_sort(Integer[] a, int n) {
         quick_sort_c(a, 0, n - 1);
         System.out.println();
@@ -44,7 +42,6 @@ public class QuickSort {
                 Integer temp = a[j];
                 a[j] = a[i];
                 a[i] = temp;
-                changeNum++;
                 i++;
             }
             j++;
@@ -54,7 +51,6 @@ public class QuickSort {
             int temp = a[pivot];
             a[pivot] = a[i];
             a[i] = temp;
-            changeNum++;
         }
         return i;
     }
@@ -64,7 +60,6 @@ public class QuickSort {
     public void test(){
         Integer[] a = {2, 3, 4, 5, 6, 7}; //完全有序的情况是：第一次的分区点是7  然后 2 3  4  5  6 再分区  分区点为6   每次都是  i 和 j位置上的数据交换
         quick_sort(a, 6);
-        System.out.println("交换次数为："+changeNum);
     }
 
 

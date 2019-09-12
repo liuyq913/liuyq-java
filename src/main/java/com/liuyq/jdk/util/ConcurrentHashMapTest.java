@@ -1,5 +1,7 @@
 package com.liuyq.jdk.util;
 
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * Created by liuyq on 2019/7/30.
  * <p>
@@ -17,7 +19,12 @@ package com.liuyq.jdk.util;
  */
 public class ConcurrentHashMapTest {
     public static void main(String[] gars) {
+        ConcurrentHashMap<Integer, Integer> concurrentHashMap = new ConcurrentHashMap();
 
-        System.out.println(Integer.numberOfLeadingZeros(16) | (1 << (16 - 1)));
+        for (int i = 0; i < 17; i++) {
+            concurrentHashMap.put(i, i);
         }
+
+       // System.out.println(Runtime.getRuntime().availableProcessors());
+    }
 }
