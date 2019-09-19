@@ -3,7 +3,7 @@ package com.liuyq.structure.tree;
 /**
  * Created by liuyq on 2019/7/21.
  * <p>
- * 二叉查找树 : 节点的右边大于根节点，左边大于根节点
+ * 二叉查找树 : 节点的右边大于根节点，左边小于根节点
  */
 public class BinarySearchTree {
     //根节点
@@ -87,7 +87,6 @@ public class BinarySearchTree {
 
             //仅仅数据交换
             p.data = minp.data;
-
             p = minp;
             pp = minpp;
 
