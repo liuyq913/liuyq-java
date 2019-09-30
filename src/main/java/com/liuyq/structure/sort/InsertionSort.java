@@ -3,6 +3,7 @@ package com.liuyq.structure.sort;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.UUID;
 
 /**
  * Created by liuyq on 2019/7/7.
@@ -37,6 +38,13 @@ public class InsertionSort {
     public void test2() {
         Integer[] vlaues = {4, 5, 6, 1, 3, 2};
         insertSort(vlaues, 6);
+    }
+
+    @Test
+    public void test3() {
+        for(;;) {
+            System.out.println(UUID.randomUUID().toString());
+        }
     }
 
     @Test
