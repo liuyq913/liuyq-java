@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>邮箱认证成功</title>
+    <script>
+        function countDown() {
+            var time = document.getElementById("Time");
+            if (time.innerHTML == 0) {
+                window.location.href = "https://www.meijian.io/discover";
+            } else {
+                time.innerHTML = time.innerHTML - 1;
+            }
+        }
+        window.setInterval("countDown()", 1000);
+    </script>
+    <style>
+        {
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h3>邮箱验证成功,<span id="Time">5</span>s后<a href="https://www.meijian.io/discover">进入美间</a></h3></div>
+</body>
+</html>

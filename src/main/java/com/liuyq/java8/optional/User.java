@@ -2,6 +2,8 @@ package com.liuyq.java8.optional;
 
 import lombok.*;
 
+import java.util.Date;
+
 /**
  * Created by liuyq on 2019/8/13.
  */
@@ -16,5 +18,8 @@ public class User {
 
     private String user;
 
+    private Date birthady;
+
+    private String birthdayStr;
 
 }
