@@ -7,9 +7,7 @@ import org.junit.Test;
 import javax.swing.text.html.Option;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 /**
  * Created by liuyq on 2019/8/13.
@@ -86,6 +84,47 @@ public class OptionalTest {
 
     @Test
     public void test6() {
-        System.out.println(UUID.randomUUID().toString().replaceAll("\\-", "").substring(0, 24)); }
+        System.out.println(UUID.randomUUID().toString().replaceAll("\\-", "").substring(0, 24));
+    }
+
+    @Test
+    public void test7() {
+        User user = new User();
+        user.setId(1);
+        user.setUser("liuyq");
+
+        List<User> list = Lists.newArrayList();
+
+        for (int i = 0; i < 10; i++) {
+            list.add(user);
+        }
+        System.out.println(list);
+    }
+    @Test
+    public void test8(){
+        //分组排序
+        List<User> users =  Lists.newArrayList();
+        users.add(User.builder().id(1).user("liuyuqing").build());
+        users.add(User.builder().id(2).user("liuyuqing").build());
+        users.add(User.builder().id(3).user("liuyuqing").build());
+        users.add(User.builder().id(4).user("liuyuqing").build());
+
+        users.add(User.builder().id(1).user("liuyuqing2").build());
+        users.add(User.builder().id(2).user("liuyuqing2").build());
+        users.add(User.builder().id(3).user("liuyuqing2").build());
+        users.add(User.builder().id(4).user("liuyuqing2").build());
+
+
+
+        Comparator<User> groupComparator = (o1, o2) -> {
+            int diff = o1.getUser().compareTo(o2.getUser());
+            return diff == 0 ? o1.getId().compareTo(o2.getId()) : diff;
+        };
+
+
+        //Comparator<User> comparator = (o1, o2) -> o2.getId().compareTo(o1.getId());
+        Collections.sort(users, groupComparator);
+        users.forEach(System.out::println);
+    }
 
 }

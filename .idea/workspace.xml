@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0039377c-0d9c-4534-b9a5-b153b685ce3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/consumer/ConsumerTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/test2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/jdk/reflect/SpringReflectModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/jdk/reflect/SpringReflectModel2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/utils/OptionalUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/thread/semaphore/SemaphoreTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/OptionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/OptionalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuyq/proxy/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/proxy/test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,22 +21,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/consumer/ConsumerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/proxy/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            <state relative-caret-position="343">
+              <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/consumer/ConsumerTest2.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/thread/semaphore/SemaphoreTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="120">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/OptionalTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -79,11 +90,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liuyq/utils/OptionalUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liuyq/java8/test.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/OptionalTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/liuyq/java8/test2.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/liuyq/java8/consumer/ConsumerTest2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/liuyq/proxy/test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/OptionalTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/liuyq/thread/semaphore/SemaphoreTest.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="liuyq-java" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -135,24 +159,19 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="liuyq" type="462c0819:PsiDirectoryNode" />
-              <item name="java8" type="462c0819:PsiDirectoryNode" />
+              <item name="thread" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="liuyq-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="liuyq-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="liuyq" type="462c0819:PsiDirectoryNode" />
-              <item name="java8" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -180,7 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConsumerTest2">
+  <component name="RunManager" selected="JUnit.OptionalTest.test8">
     <configuration name="ConsumerTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.liuyq.java8.consumer.ConsumerTest2" />
       <module name="liuyq-java" />
@@ -194,7 +213,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OptionalTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.proxy.test" />
+      <module name="liuyq-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liuyq.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OptionalTest.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="liuyq-java" />
       <extension name="coverage">
         <pattern>
@@ -204,55 +236,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.liuyq.java8.optional" />
       <option name="MAIN_CLASS_NAME" value="com.liuyq.java8.optional.OptionalTest" />
+      <option name="METHOD_NAME" value="test7" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OptionalTest.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="liuyq-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liuyq.java8.optional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liuyq.java8.optional" />
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.java8.optional.OptionalTest" />
+      <option name="METHOD_NAME" value="test8" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="liuyq-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.liuyq.proxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.liuyq.proxy" />
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.proxy.test" />
       <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OptionalTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="liuyq-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.liuyq.java8.optional.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.liuyq.java8.optional" />
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.java8.optional.OptionalTest" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OptionalTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="liuyq-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.liuyq.java8.optional.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.liuyq.java8.optional" />
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.java8.optional.OptionalTest" />
-      <option name="METHOD_NAME" value="test6" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestReflect.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="liuyq-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.liuyq.jdk.reflect.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.liuyq.jdk.reflect" />
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.jdk.reflect.TestReflect" />
-      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -260,11 +276,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OptionalTest.test8" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="JUnit.test.test4" />
+        <item itemvalue="JUnit.OptionalTest.test7" />
         <item itemvalue="Application.ConsumerTest2" />
-        <item itemvalue="JUnit.OptionalTest.test6" />
-        <item itemvalue="JUnit.OptionalTest.test5" />
-        <item itemvalue="JUnit.OptionalTest.test4" />
-        <item itemvalue="JUnit.TestReflect.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -291,44 +307,61 @@
       <workItem from="1573723321364" duration="1734000" />
       <workItem from="1573807107659" duration="2427000" />
       <workItem from="1573995198293" duration="2595000" />
-      <workItem from="1574230876827" duration="530000" />
+      <workItem from="1574230876827" duration="2245000" />
+      <workItem from="1574317761920" duration="3329000" />
+      <workItem from="1574335024150" duration="247000" />
+      <workItem from="1574941501778" duration="1256000" />
+      <workItem from="1574947035898" duration="554000" />
+      <workItem from="1574950039376" duration="38000" />
+      <workItem from="1575007089163" duration="1346000" />
+      <workItem from="1575208984364" duration="28000" />
+      <workItem from="1575265099345" duration="796000" />
+      <workItem from="1575531414565" duration="906000" />
     </task>
+    <task id="LOCAL-00001" summary="测试">
+      <created>1574231460169</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574231460169</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OptionalTest_test5 - 2019.11.14 at 17h 44m 56s.xml">
-      <configuration name="OptionalTest.test5" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionalTest_test6 - 2019.11.15 at 16h 39m 22s.xml">
-      <configuration name="OptionalTest.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionalTest_test6 - 2019.11.15 at 16h 40m 26s.xml">
-      <configuration name="OptionalTest.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionalTest_test6 - 2019.11.15 at 16h 40m 51s.xml">
-      <configuration name="OptionalTest.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionalTest_test6 - 2019.11.15 at 16h 41m 58s.xml">
-      <configuration name="OptionalTest.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionalTest_test6 - 2019.11.15 at 16h 42m 23s.xml">
-      <configuration name="OptionalTest.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionalTest_test6 - 2019.11.15 at 16h 56m 51s.xml">
-      <configuration name="OptionalTest.test6" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionalTest_test6 - 2019.11.15 at 16h 57m 13s.xml">
-      <configuration name="OptionalTest.test6" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="OptionalTest_test6 - 2019.11.15 at 16h 57m 41s.xml">
       <configuration name="OptionalTest.test6" configurationId="JUnit" />
     </history-entry>
     <history-entry file="OptionalTest_test6 - 2019.11.15 at 16h 58m 47s.xml">
       <configuration name="OptionalTest.test6" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="OptionalTest_test7 - 2019.11.21 at 14h 32m 20s.xml">
+      <configuration name="OptionalTest.test7" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_test4 - 2019.11.28 at 19h 45m 43s.xml">
+      <configuration name="test.test4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_test4 - 2019.11.28 at 19h 46m 14s.xml">
+      <configuration name="test.test4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_test4 - 2019.11.29 at 13h 59m 17s.xml">
+      <configuration name="test.test4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test_test4 - 2019.11.29 at 13h 59m 53s.xml">
+      <configuration name="test.test4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OptionalTest_test8 - 2019.12.02 at 13h 45m 49s.xml">
+      <configuration name="OptionalTest.test8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OptionalTest_test8 - 2019.12.02 at 13h 46m 54s.xml">
+      <configuration name="OptionalTest.test8" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OptionalTest_test8 - 2019.12.02 at 13h 48m 39s.xml">
+      <configuration name="OptionalTest.test8" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31534000" />
+    <option name="totallyTimeSpent" value="41749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="0" />
@@ -339,7 +372,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.20386267" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22961374" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Spring" order="1" />
@@ -358,7 +391,7 @@
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3297568" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
@@ -400,6 +433,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -544,41 +581,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/RestTemplateTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/OptionalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -589,20 +595,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/fanxing/Common.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/consumer/ConsumerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state relative-caret-position="441">
+          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/consumer/ConsumerTest2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/OptionalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/proxy/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liuyq/thread/semaphore/SemaphoreTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
