@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0039377c-0d9c-4534-b9a5-b153b685ce3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/digit/ArrayUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/digit/BinaryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/digit/Digit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/digit/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/functional/Closure8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/functional/ConsumeFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/functional/Curry3Args.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/functional/CurryingAndPartials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/functional/FunctionComposition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/functional/PredicateComposition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/functional/TransformFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/functional/TriFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/functional/TriFunctionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/functional/UnboundMethodReference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/OptionalTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/Signal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/stream/FlatMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/stream/StreamOfStreams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/TestSupplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/TestSupplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuyq/jdk/lang/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/jdk/lang/StringTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +70,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ArrayUtils">
+  <component name="RunManager" selected="JUnit.StringTest.testFastDayFormate">
     <configuration name="ArrayUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.liuyq.digit.ArrayUtils" />
       <module name="liuyq-java" />
@@ -129,46 +110,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlatMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.java8.stream.FlatMap" />
+    <configuration name="StringTest.testFastDayFormate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="liuyq-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liuyq.java8.stream.*" />
+          <option name="PATTERN" value="com.liuyq.jdk.lang.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.liuyq.jdk.lang" />
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.jdk.lang.StringTest" />
+      <option name="METHOD_NAME" value="testFastDayFormate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.digit.Test" />
+    <configuration name="StringTest.testStringUtil" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="liuyq-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liuyq.digit.*" />
+          <option name="PATTERN" value="com.liuyq.jdk.lang.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.liuyq.jdk.lang" />
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.jdk.lang.StringTest" />
+      <option name="METHOD_NAME" value="testStringUtil" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.FlatMap" />
       <item itemvalue="Application.Digit" />
       <item itemvalue="Application.BinaryTest" />
-      <item itemvalue="Application.Test" />
       <item itemvalue="Application.ArrayUtils" />
+      <item itemvalue="JUnit.StringTest.testStringUtil" />
+      <item itemvalue="JUnit.StringTest.testFastDayFormate" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StringTest.testFastDayFormate" />
+        <item itemvalue="JUnit.StringTest.testStringUtil" />
         <item itemvalue="Application.ArrayUtils" />
         <item itemvalue="Application.Digit" />
         <item itemvalue="Application.BinaryTest" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.FlatMap" />
       </list>
     </recent_temporary>
   </component>
@@ -248,6 +235,9 @@
       <workItem from="1583976161436" duration="7204000" />
       <workItem from="1583993586930" duration="2670000" />
       <workItem from="1584082538626" duration="2739000" />
+      <workItem from="1584107613282" duration="355000" />
+      <workItem from="1584668986704" duration="1397000" />
+      <workItem from="1584686472257" duration="522000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1574231460169</created>
@@ -284,40 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1581557904961</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="on java8">
+      <created>1584107657574</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584107657574</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="test_test4 - 2019.11.29 at 13h 59m 53s.xml">
-      <configuration name="test.test4" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionalTest_test8 - 2019.12.02 at 13h 45m 49s.xml">
-      <configuration name="OptionalTest.test8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionalTest_test8 - 2019.12.02 at 13h 46m 54s.xml">
-      <configuration name="OptionalTest.test8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionalTest_test8 - 2019.12.02 at 13h 48m 39s.xml">
-      <configuration name="OptionalTest.test8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test3_test1 - 2020.01.09 at 15h 27m 52s.xml">
-      <configuration name="test3.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test3_test1 - 2020.01.09 at 15h 28m 15s.xml">
-      <configuration name="test3.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test3_test1 - 2020.01.09 at 15h 28m 39s.xml">
-      <configuration name="test3.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test3_test1 - 2020.01.09 at 15h 29m 41s.xml">
-      <configuration name="test3.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test3_test1 - 2020.01.09 at 15h 30m 00s.xml">
-      <configuration name="test3.test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="test3_test1 - 2020.01.09 at 15h 30m 16s.xml">
-      <configuration name="test3.test1" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -350,11 +315,37 @@
             </State>
           </value>
         </entry>
+        <entry key="2">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/Users/lycs/workspace/liuyq-java/.idea" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="OPEN_TABS">
       <set>
         <option value="1" />
+        <option value="2" />
       </set>
     </option>
   </component>
@@ -363,7 +354,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="cyclicBarrier" />
     <MESSAGE value="semaphore" />
-    <option name="LAST_COMMIT_MESSAGE" value="semaphore" />
+    <MESSAGE value="on java8" />
+    <option name="LAST_COMMIT_MESSAGE" value="on java8" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583676117485">
@@ -378,10 +370,10 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="483" y="147" key="#xdebugger.evaluate/0.23.1440.828@0.23.1440.828" timestamp="1580719796594" />
-    <state x="439" y="106" key="CommitChangelistDialog2" timestamp="1581557904677">
+    <state x="439" y="106" key="CommitChangelistDialog2" timestamp="1584107657342">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="439" y="106" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1581557904677" />
+    <state x="439" y="106" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1584107657342" />
     <state width="456" height="507" key="DebuggerActiveHint" timestamp="1583979155101">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -391,88 +383,88 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1581557982390" />
-    <state width="1398" height="121" key="GridCell.Tab.0.bottom" timestamp="1584019703069">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state width="1398" height="264" key="GridCell.Tab.0.bottom" timestamp="1584686652829">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="141" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1637.1440.2537@0.0.1440.900" timestamp="1583987132310" />
-    <state width="1398" height="265" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1583982474252" />
+    <state width="1398" height="264" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1584686652829" />
     <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583980365353" />
     <state width="1398" height="122" key="GridCell.Tab.0.bottom/0.23.1440.828/1440.-1637.1440.2537@0.23.1440.828" timestamp="1583718688966" />
     <state width="1398" height="121" key="GridCell.Tab.0.bottom/0.23.1440.828/1440.-1637.1440.2537@1440.-1637.1440.2537" timestamp="1583993743264" />
     <state width="1398" height="121" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1584019703069" />
     <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.-1637.1440.2488@0.23.1440.877" timestamp="1583803987439" />
     <state width="1398" height="109" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1583765821436" />
-    <state width="1398" height="121" key="GridCell.Tab.0.center" timestamp="1584019703068">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state width="1398" height="264" key="GridCell.Tab.0.center" timestamp="1584686652795">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="141" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1637.1440.2537@0.0.1440.900" timestamp="1583987132308" />
-    <state width="1398" height="265" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1583982474250" />
+    <state width="1398" height="264" key="GridCell.Tab.0.center/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1584686652795" />
     <state width="1398" height="199" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583980365352" />
     <state width="1398" height="122" key="GridCell.Tab.0.center/0.23.1440.828/1440.-1637.1440.2537@0.23.1440.828" timestamp="1583718688965" />
     <state width="1398" height="121" key="GridCell.Tab.0.center/0.23.1440.828/1440.-1637.1440.2537@1440.-1637.1440.2537" timestamp="1583993743263" />
     <state width="1398" height="121" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1584019703068" />
     <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.877/1440.-1637.1440.2488@0.23.1440.877" timestamp="1583803987438" />
     <state width="1398" height="109" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1583765821435" />
-    <state width="1398" height="121" key="GridCell.Tab.0.left" timestamp="1584019703068">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state width="1398" height="264" key="GridCell.Tab.0.left" timestamp="1584686652794">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="141" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1637.1440.2537@0.0.1440.900" timestamp="1583987132307" />
-    <state width="1398" height="265" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1583982474248" />
+    <state width="1398" height="264" key="GridCell.Tab.0.left/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1584686652794" />
     <state width="1398" height="199" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583980365351" />
     <state width="1398" height="122" key="GridCell.Tab.0.left/0.23.1440.828/1440.-1637.1440.2537@0.23.1440.828" timestamp="1583718688964" />
     <state width="1398" height="121" key="GridCell.Tab.0.left/0.23.1440.828/1440.-1637.1440.2537@1440.-1637.1440.2537" timestamp="1583993743262" />
     <state width="1398" height="121" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1584019703068" />
     <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.877/1440.-1637.1440.2488@0.23.1440.877" timestamp="1583803987437" />
     <state width="1398" height="109" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1583765821433" />
-    <state width="1398" height="121" key="GridCell.Tab.0.right" timestamp="1584019703068">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state width="1398" height="264" key="GridCell.Tab.0.right" timestamp="1584686652828">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="141" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1637.1440.2537@0.0.1440.900" timestamp="1583987132309" />
-    <state width="1398" height="265" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1583982474251" />
+    <state width="1398" height="264" key="GridCell.Tab.0.right/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1584686652828" />
     <state width="1398" height="199" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583980365352" />
     <state width="1398" height="122" key="GridCell.Tab.0.right/0.23.1440.828/1440.-1637.1440.2537@0.23.1440.828" timestamp="1583718688966" />
     <state width="1398" height="121" key="GridCell.Tab.0.right/0.23.1440.828/1440.-1637.1440.2537@1440.-1637.1440.2537" timestamp="1583993743263" />
     <state width="1398" height="121" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1584019703068" />
     <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.877/1440.-1637.1440.2488@0.23.1440.877" timestamp="1583803987439" />
     <state width="1398" height="109" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1583765821435" />
-    <state width="1398" height="231" key="GridCell.Tab.1.bottom" timestamp="1584019703062">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state width="1398" height="264" key="GridCell.Tab.1.bottom" timestamp="1584686652844">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="265" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-1637.1440.2537@0.0.1440.900" timestamp="1583987132301" />
-    <state width="1398" height="265" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1583982474255" />
+    <state width="1398" height="264" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1584686652844" />
     <state width="1398" height="199" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583980345238" />
     <state width="1398" height="309" key="GridCell.Tab.1.bottom/0.23.1440.828/1440.-1637.1440.2537@0.23.1440.828" timestamp="1583718688955" />
     <state width="1398" height="231" key="GridCell.Tab.1.bottom/0.23.1440.828/1440.-1637.1440.2537@1440.-1637.1440.2537" timestamp="1583993726750" />
     <state width="1398" height="231" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1584019703062" />
     <state width="1398" height="199" key="GridCell.Tab.1.bottom/0.23.1440.877/1440.-1637.1440.2488@0.23.1440.877" timestamp="1583803987441" />
     <state width="1398" height="109" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1583765821227" />
-    <state width="1398" height="231" key="GridCell.Tab.1.center" timestamp="1584019703062">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state width="1398" height="264" key="GridCell.Tab.1.center" timestamp="1584686652832">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="265" key="GridCell.Tab.1.center/0.0.1440.900/1440.-1637.1440.2537@0.0.1440.900" timestamp="1583987132299" />
-    <state width="1398" height="265" key="GridCell.Tab.1.center/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1583982474253" />
+    <state width="1398" height="264" key="GridCell.Tab.1.center/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1584686652832" />
     <state width="1398" height="199" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1583980345237" />
     <state width="1398" height="309" key="GridCell.Tab.1.center/0.23.1440.828/1440.-1637.1440.2537@0.23.1440.828" timestamp="1583718688954" />
     <state width="1398" height="231" key="GridCell.Tab.1.center/0.23.1440.828/1440.-1637.1440.2537@1440.-1637.1440.2537" timestamp="1583993726749" />
     <state width="1398" height="231" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1584019703062" />
     <state width="1398" height="199" key="GridCell.Tab.1.center/0.23.1440.877/1440.-1637.1440.2488@0.23.1440.877" timestamp="1583803987440" />
     <state width="1398" height="109" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1583765821227" />
-    <state width="1398" height="231" key="GridCell.Tab.1.left" timestamp="1584019703061">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state width="1398" height="264" key="GridCell.Tab.1.left" timestamp="1584686652831">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="265" key="GridCell.Tab.1.left/0.0.1440.900/1440.-1637.1440.2537@0.0.1440.900" timestamp="1583987132298" />
-    <state width="1398" height="265" key="GridCell.Tab.1.left/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1583982474252" />
+    <state width="1398" height="264" key="GridCell.Tab.1.left/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1584686652831" />
     <state width="1398" height="199" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1583980345237" />
     <state width="1398" height="309" key="GridCell.Tab.1.left/0.23.1440.828/1440.-1637.1440.2537@0.23.1440.828" timestamp="1583718688954" />
     <state width="1398" height="231" key="GridCell.Tab.1.left/0.23.1440.828/1440.-1637.1440.2537@1440.-1637.1440.2537" timestamp="1583993726747" />
     <state width="1398" height="231" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1584019703061" />
     <state width="1398" height="199" key="GridCell.Tab.1.left/0.23.1440.877/1440.-1637.1440.2488@0.23.1440.877" timestamp="1583803987440" />
     <state width="1398" height="109" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1583765821226" />
-    <state width="1398" height="231" key="GridCell.Tab.1.right" timestamp="1584019703062">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state width="1398" height="264" key="GridCell.Tab.1.right" timestamp="1584686652839">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="265" key="GridCell.Tab.1.right/0.0.1440.900/1440.-1637.1440.2537@0.0.1440.900" timestamp="1583987132300" />
-    <state width="1398" height="265" key="GridCell.Tab.1.right/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1583982474254" />
+    <state width="1398" height="264" key="GridCell.Tab.1.right/0.0.1440.900/1440.-1660.1440.2560@0.0.1440.900" timestamp="1584686652839" />
     <state width="1398" height="199" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1583980345238" />
     <state width="1398" height="309" key="GridCell.Tab.1.right/0.23.1440.828/1440.-1637.1440.2537@0.23.1440.828" timestamp="1583718688955" />
     <state width="1398" height="231" key="GridCell.Tab.1.right/0.23.1440.828/1440.-1637.1440.2537@1440.-1637.1440.2537" timestamp="1583993726750" />
@@ -488,10 +480,10 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="229" y="76" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1583677484000" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1581557906750">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1584107708067">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1581557906750" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1584107708067" />
     <state x="100" y="123" width="1240" height="628" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1580716579228">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
@@ -508,6 +500,17 @@
     <state x="1825" y="-1172" width="670" height="2072" key="search.everywhere.popup/0.23.1440.828/1440.-1637.1440.2537@1440.-1637.1440.2537" timestamp="1584082580758" />
     <state x="385" y="175" width="670" height="676" key="search.everywhere.popup/0.23.1440.828@0.23.1440.828" timestamp="1583848288281" />
     <state x="385" y="184" width="670" height="717" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1583764966648" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/liuyq/java8/optional/OptionalTest.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>

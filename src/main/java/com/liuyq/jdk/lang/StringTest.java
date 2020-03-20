@@ -1,8 +1,11 @@
 package com.liuyq.jdk.lang;
 
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.time.FastDateFormat;
 import org.junit.Test;
 
 import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -198,5 +201,29 @@ import java.util.List;
     public void test1(){
         Long l = 20180730061744L;
         System.out.println(new Date(l));
+    }
+
+    @Test
+    public void testStringUtil(){
+        System.out.println(StringUtils.leftPad("1",4,"0"));
+        System.out.println(StringUtils.leftPad("11",4,"0"));
+        System.out.println(StringUtils.leftPad("111",5,"0"));
+
+    }
+
+    /**
+     * SimpleDateFormat 和 FastDateFormat
+     * （1）SimpleDateFormat是线程不安全的 FastDateFormat是线程安全的
+     *  （2）使用SimpleDateFormat 需要每次都new ， FastDateFormat 则缓存了FastDateFormat ，相同的pattern 回一直使用同一个fastDateFormate
+     */
+    @Test
+    public void testFastDayFormate(){
+        String pattern = "yyyy-MM-dd HH:MM:ss";
+
+        SimpleDateFormat format = new SimpleDateFormat(pattern);
+        FastDateFormat fastDateFormat = FastDateFormat.getInstance(pattern);
+
+        System.out.println(format.format(new Date()));
+        System.out.println(fastDateFormat.format(new Date()));
     }
 }
