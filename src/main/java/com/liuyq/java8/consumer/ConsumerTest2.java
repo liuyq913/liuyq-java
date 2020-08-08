@@ -19,6 +19,7 @@ public class ConsumerTest2 {
         }, Arrays.asList(1,2,34));
     }
 
+
     public static void main(String[] args){
         ConsumerTest2 consumerTest2 = new ConsumerTest2();
         consumerTest2.now();
