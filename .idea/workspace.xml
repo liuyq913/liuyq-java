@@ -2,18 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0039377c-0d9c-4534-b9a5-b153b685ce3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/reward/FactorRewardStrategyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/reward/NewUserRewardStrategyA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/reward/RewardContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/reward/RewardStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/reward/StrategyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/clean.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/compile.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/mediator/Colleague.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/mediator/ConcreteColleague1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/mediator/ConcreteColleague2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/mediator/ConcreteMediator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/mediator/Mediator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/mediator/MediatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/prototype/DeepPrototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/prototype/Prototype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/prototype/ShallowPrototype.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/consumer/ConsumerTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/java8/consumer/ConsumerTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuyq/design/reward/RewardContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/reward/RewardContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -47,6 +57,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1WFisd2vJVPJTxtsHgwrf01NYGA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -56,6 +69,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -64,9 +78,12 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
       <recent name="com.liuyq.easyExcel" />
@@ -75,13 +92,13 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StringTest.testFastDayFormate">
-    <configuration name="ArrayUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.digit.ArrayUtils" />
+  <component name="RunManager" selected="Application.MediatorTest">
+    <configuration name="DeepPrototype" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.design.prototype.DeepPrototype" />
       <module name="liuyq-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liuyq.digit.*" />
+          <option name="PATTERN" value="com.liuyq.design.prototype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinaryTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.digit.BinaryTest" />
+    <configuration name="MediatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.design.mediator.MediatorTest" />
       <module name="liuyq-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liuyq.digit.*" />
+          <option name="PATTERN" value="com.liuyq.design.mediator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -102,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Digit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.digit.Digit" />
+    <configuration name="Prototype" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.design.prototype.Prototype" />
       <module name="liuyq-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liuyq.digit.*" />
+          <option name="PATTERN" value="com.liuyq.design.prototype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,52 +132,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringTest.testFastDayFormate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PrototypeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.design.prototype.PrototypeTest" />
       <module name="liuyq-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liuyq.jdk.lang.*" />
+          <option name="PATTERN" value="com.liuyq.design.prototype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.liuyq.jdk.lang" />
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.jdk.lang.StringTest" />
-      <option name="METHOD_NAME" value="testFastDayFormate" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringTest.testStringUtil" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShallowPrototype" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.design.prototype.ShallowPrototype" />
       <module name="liuyq-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liuyq.jdk.lang.*" />
+          <option name="PATTERN" value="com.liuyq.design.prototype.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.liuyq.jdk.lang" />
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.jdk.lang.StringTest" />
-      <option name="METHOD_NAME" value="testStringUtil" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Digit" />
-      <item itemvalue="Application.BinaryTest" />
-      <item itemvalue="Application.ArrayUtils" />
-      <item itemvalue="JUnit.StringTest.testStringUtil" />
-      <item itemvalue="JUnit.StringTest.testFastDayFormate" />
+      <item itemvalue="Application.PrototypeTest" />
+      <item itemvalue="Application.Prototype" />
+      <item itemvalue="Application.ShallowPrototype" />
+      <item itemvalue="Application.DeepPrototype" />
+      <item itemvalue="Application.MediatorTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StringTest.testFastDayFormate" />
-        <item itemvalue="JUnit.StringTest.testStringUtil" />
-        <item itemvalue="Application.ArrayUtils" />
-        <item itemvalue="Application.Digit" />
-        <item itemvalue="Application.BinaryTest" />
+        <item itemvalue="Application.MediatorTest" />
+        <item itemvalue="Application.ShallowPrototype" />
+        <item itemvalue="Application.Prototype" />
+        <item itemvalue="Application.DeepPrototype" />
+        <item itemvalue="Application.PrototypeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +259,16 @@
       <workItem from="1586786193781" duration="1882000" />
       <workItem from="1595835549503" duration="657000" />
       <workItem from="1596072516764" duration="2000" />
-      <workItem from="1596861981890" duration="21000" />
+      <workItem from="1596861981890" duration="1956000" />
+      <workItem from="1596961140648" duration="4209000" />
+      <workItem from="1597022881238" duration="16000" />
+      <workItem from="1597386633345" duration="2143000" />
+      <workItem from="1597403511041" duration="2014000" />
+      <workItem from="1597416285386" duration="596000" />
+      <workItem from="1598453408838" duration="8048000" />
+      <workItem from="1598534143907" duration="371000" />
+      <workItem from="1598669674558" duration="2000" />
+      <workItem from="1599030838708" duration="57000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1574231460169</created>
@@ -299,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584687014018</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="提交一波老代码">
+      <created>1596862040795</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596862040795</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,12 +401,87 @@
     <MESSAGE value="semaphore" />
     <MESSAGE value="on java8" />
     <MESSAGE value="一些注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="一些注释" />
+    <MESSAGE value="提交一波老代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交一波老代码" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="533" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1598454430976">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="533" y="153" key="#com.intellij.ide.util.MemberChooser/0.23.1440.827@0.23.1440.827" timestamp="1598454430976" />
+    <state x="314" y="39" key="CommitChangelistDialog2" timestamp="1596862040392">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="314" y="39" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1596862040392" />
+    <state width="420" height="438" key="DebuggerActiveHint" timestamp="1596963612689">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="420" height="438" key="DebuggerActiveHint/0.23.1440.827@0.23.1440.827" timestamp="1596963612689" />
+    <state width="1878" height="220" key="GridCell.Tab.0.bottom" timestamp="1598534083383">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1878" height="220" key="GridCell.Tab.0.bottom/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083383" />
+    <state width="1398" height="161" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1598526489406" />
+    <state width="1878" height="220" key="GridCell.Tab.0.bottom/0.23.1920.1007@0.23.1920.1007" timestamp="1598531055657" />
+    <state width="1878" height="220" key="GridCell.Tab.0.center" timestamp="1598534083380">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1878" height="220" key="GridCell.Tab.0.center/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083380" />
+    <state width="1398" height="161" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1598526489403" />
+    <state width="1878" height="220" key="GridCell.Tab.0.center/0.23.1920.1007@0.23.1920.1007" timestamp="1598531055656" />
+    <state width="1878" height="220" key="GridCell.Tab.0.left" timestamp="1598534083379">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1878" height="220" key="GridCell.Tab.0.left/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083379" />
+    <state width="1398" height="161" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1598526489403" />
+    <state width="1878" height="220" key="GridCell.Tab.0.left/0.23.1920.1007@0.23.1920.1007" timestamp="1598531055655" />
+    <state width="1878" height="220" key="GridCell.Tab.0.right" timestamp="1598534083382">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1878" height="220" key="GridCell.Tab.0.right/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083382" />
+    <state width="1398" height="161" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1598526489404" />
+    <state width="1878" height="220" key="GridCell.Tab.0.right/0.23.1920.1007@0.23.1920.1007" timestamp="1598531055656" />
+    <state width="1878" height="220" key="GridCell.Tab.1.bottom" timestamp="1598534083386">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1878" height="220" key="GridCell.Tab.1.bottom/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083386" />
+    <state width="1398" height="161" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1598526489408" />
+    <state width="1878" height="220" key="GridCell.Tab.1.bottom/0.23.1920.1007@0.23.1920.1007" timestamp="1598531055658" />
+    <state width="1878" height="220" key="GridCell.Tab.1.center" timestamp="1598534083384">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1878" height="220" key="GridCell.Tab.1.center/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083384" />
+    <state width="1398" height="161" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1598526489407" />
+    <state width="1878" height="220" key="GridCell.Tab.1.center/0.23.1920.1007@0.23.1920.1007" timestamp="1598531055657" />
+    <state width="1878" height="220" key="GridCell.Tab.1.left" timestamp="1598534083383">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1878" height="220" key="GridCell.Tab.1.left/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083383" />
+    <state width="1398" height="161" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1598526489407" />
+    <state width="1878" height="220" key="GridCell.Tab.1.left/0.23.1920.1007@0.23.1920.1007" timestamp="1598531055657" />
+    <state width="1878" height="220" key="GridCell.Tab.1.right" timestamp="1598534083384">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state width="1878" height="220" key="GridCell.Tab.1.right/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083384" />
+    <state width="1398" height="161" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1598526489408" />
+    <state width="1878" height="220" key="GridCell.Tab.1.right/0.23.1920.1007@0.23.1920.1007" timestamp="1598531055658" />
+    <state x="229" y="75" key="SettingsEditor" timestamp="1598455160735">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="229" y="75" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1598455160735" />
+    <state x="100" y="123" width="1240" height="627" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598526340417">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="100" y="123" width="1240" height="627" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.827@0.23.1440.827" timestamp="1598526340417" />
     <state x="399" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1596861984378">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="399" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.827@0.23.1440.827" timestamp="1596861984378" />
+    <state x="385" y="174" width="670" height="676" key="search.everywhere.popup" timestamp="1598520069626">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="385" y="174" width="670" height="676" key="search.everywhere.popup/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598520069626" />
+    <state x="385" y="174" width="670" height="676" key="search.everywhere.popup/0.23.1440.827@0.23.1440.827" timestamp="1596862853793" />
+    <state x="513" y="207" width="894" height="824" key="search.everywhere.popup/0.23.1920.1007@0.23.1920.1007" timestamp="1597406064340" />
   </component>
 </project>
