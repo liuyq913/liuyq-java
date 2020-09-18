@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0039377c-0d9c-4534-b9a5-b153b685ce3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/state/CommonState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/state/LiuXiang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/state/LiuXiang1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/state/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/state/RunState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/state/SpeedDownState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/state/SpeedUpState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/design/state/SwimState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuyq/structure/sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/structure/sort/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/liuyq/structure/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/liuyq/structure/sort/QuickSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +57,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -71,102 +66,119 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/liuyq/jni" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/liuyq" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
       <recent name="com.liuyq.easyExcel" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="DeepPrototype" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.design.prototype.DeepPrototype" />
+  <component name="RunManager" selected="JUnit.QuickSort.test">
+    <configuration name="InsertionSort.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="liuyq-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liuyq.design.prototype.*" />
+          <option name="PATTERN" value="com.liuyq.structure.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.liuyq.structure.sort" />
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.structure.sort.InsertionSort" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.design.state.Main" />
+    <configuration name="InsertionSort.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="liuyq-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liuyq.design.state.*" />
+          <option name="PATTERN" value="com.liuyq.structure.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.liuyq.structure.sort" />
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.structure.sort.InsertionSort" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MediatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.design.mediator.MediatorTest" />
+    <configuration name="MergeSort.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="liuyq-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liuyq.design.mediator.*" />
+          <option name="PATTERN" value="com.liuyq.structure.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.liuyq.structure.sort" />
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.structure.sort.MergeSort" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Prototype" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.design.prototype.Prototype" />
+    <configuration name="QuickSort.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="liuyq-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liuyq.design.prototype.*" />
+          <option name="PATTERN" value="com.liuyq.structure.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.liuyq.structure.sort" />
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.structure.sort.QuickSort" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShallowPrototype" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.liuyq.design.prototype.ShallowPrototype" />
+    <configuration name="SelectionSort.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="liuyq-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.liuyq.design.prototype.*" />
+          <option name="PATTERN" value="com.liuyq.structure.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.liuyq.structure.sort" />
+      <option name="MAIN_CLASS_NAME" value="com.liuyq.structure.sort.SelectionSort" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Prototype" />
-      <item itemvalue="Application.ShallowPrototype" />
-      <item itemvalue="Application.DeepPrototype" />
-      <item itemvalue="Application.MediatorTest" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.InsertionSort.test2" />
+      <item itemvalue="JUnit.InsertionSort.test3" />
+      <item itemvalue="JUnit.SelectionSort.test" />
+      <item itemvalue="JUnit.MergeSort.test" />
+      <item itemvalue="JUnit.QuickSort.test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MediatorTest" />
-        <item itemvalue="Application.ShallowPrototype" />
-        <item itemvalue="Application.Prototype" />
-        <item itemvalue="Application.DeepPrototype" />
+        <item itemvalue="JUnit.QuickSort.test" />
+        <item itemvalue="JUnit.MergeSort.test" />
+        <item itemvalue="JUnit.SelectionSort.test" />
+        <item itemvalue="JUnit.InsertionSort.test2" />
+        <item itemvalue="JUnit.InsertionSort.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -268,6 +280,10 @@
       <workItem from="1599054258197" duration="3806000" />
       <workItem from="1599096451714" duration="2822000" />
       <workItem from="1599102623019" duration="7593000" />
+      <workItem from="1599141375992" duration="855000" />
+      <workItem from="1600137683582" duration="1759000" />
+      <workItem from="1600400389245" duration="5238000" />
+      <workItem from="1600411522705" duration="7521000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1574231460169</created>
@@ -332,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599030923160</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat 状态模式">
+      <created>1599141413253</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1599141413253</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,86 +432,107 @@
     <MESSAGE value="一些注释" />
     <MESSAGE value="提交一波老代码" />
     <MESSAGE value="feat 中介者模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat 中介者模式" />
+    <MESSAGE value="feat 状态模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat 状态模式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1599057009675">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="533" y="153" key="#com.intellij.ide.util.MemberChooser/0.23.1440.827@0.23.1440.827" timestamp="1599057009675" />
-    <state x="620" y="56" key="CommitChangelistDialog2" timestamp="1599030922877">
+    <state x="314" y="39" key="CommitChangelistDialog2" timestamp="1599141412796">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="620" y="56" key="CommitChangelistDialog2/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1599030922877" />
-    <state x="314" y="39" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1596862040392" />
-    <state width="420" height="438" key="DebuggerActiveHint" timestamp="1596963612689">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state x="314" y="39" key="CommitChangelistDialog2/0.23.1440.827@0.23.1440.827" timestamp="1599141412796" />
+    <state width="420" height="477" key="DebuggerActiveHint" timestamp="1600410537496">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="420" height="477" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1600410537496" />
     <state width="420" height="438" key="DebuggerActiveHint/0.23.1440.827@0.23.1440.827" timestamp="1596963612689" />
-    <state width="1878" height="285" key="GridCell.Tab.0.bottom" timestamp="1599126006932">
-      <screen x="0" y="23" width="1920" height="1007" />
+    <state width="1398" height="267" key="GridCell.Tab.0.bottom" timestamp="1600423449869">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="267" key="GridCell.Tab.0.bottom/0.0.1440.900/-534.-1440.2560.1440@0.0.1440.900" timestamp="1600423449869" />
+    <state width="1398" height="161" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600415038693" />
     <state width="1878" height="220" key="GridCell.Tab.0.bottom/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083383" />
-    <state width="1398" height="300" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1599060382084" />
+    <state width="1398" height="232" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1600411492959" />
     <state width="1878" height="285" key="GridCell.Tab.0.bottom/0.23.1920.1007@0.23.1920.1007" timestamp="1599126006932" />
-    <state width="1878" height="285" key="GridCell.Tab.0.center" timestamp="1599126006930">
-      <screen x="0" y="23" width="1920" height="1007" />
+    <state width="1398" height="267" key="GridCell.Tab.0.center" timestamp="1600423449868">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="267" key="GridCell.Tab.0.center/0.0.1440.900/-534.-1440.2560.1440@0.0.1440.900" timestamp="1600423449868" />
+    <state width="1398" height="161" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600415038692" />
     <state width="1878" height="220" key="GridCell.Tab.0.center/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083380" />
-    <state width="1398" height="300" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1599060382083" />
+    <state width="1398" height="232" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1600411492958" />
     <state width="1878" height="285" key="GridCell.Tab.0.center/0.23.1920.1007@0.23.1920.1007" timestamp="1599126006930" />
-    <state width="1878" height="285" key="GridCell.Tab.0.left" timestamp="1599126006930">
-      <screen x="0" y="23" width="1920" height="1007" />
+    <state width="1398" height="267" key="GridCell.Tab.0.left" timestamp="1600423449867">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="267" key="GridCell.Tab.0.left/0.0.1440.900/-534.-1440.2560.1440@0.0.1440.900" timestamp="1600423449867" />
+    <state width="1398" height="161" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600415038692" />
     <state width="1878" height="220" key="GridCell.Tab.0.left/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083379" />
-    <state width="1398" height="300" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1599060382083" />
+    <state width="1398" height="232" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1600411492957" />
     <state width="1878" height="285" key="GridCell.Tab.0.left/0.23.1920.1007@0.23.1920.1007" timestamp="1599126006930" />
-    <state width="1878" height="285" key="GridCell.Tab.0.right" timestamp="1599126006931">
-      <screen x="0" y="23" width="1920" height="1007" />
+    <state width="1398" height="267" key="GridCell.Tab.0.right" timestamp="1600423449869">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="267" key="GridCell.Tab.0.right/0.0.1440.900/-534.-1440.2560.1440@0.0.1440.900" timestamp="1600423449869" />
+    <state width="1398" height="161" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600415038693" />
     <state width="1878" height="220" key="GridCell.Tab.0.right/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083382" />
-    <state width="1398" height="300" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1599060382084" />
+    <state width="1398" height="232" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1600411492958" />
     <state width="1878" height="285" key="GridCell.Tab.0.right/0.23.1920.1007@0.23.1920.1007" timestamp="1599126006931" />
-    <state width="1878" height="285" key="GridCell.Tab.1.bottom" timestamp="1599126006831">
-      <screen x="0" y="23" width="1920" height="1007" />
+    <state width="1398" height="267" key="GridCell.Tab.1.bottom" timestamp="1600423449872">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="267" key="GridCell.Tab.1.bottom/0.0.1440.900/-534.-1440.2560.1440@0.0.1440.900" timestamp="1600423449872" />
+    <state width="1398" height="161" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600415038695" />
     <state width="1878" height="220" key="GridCell.Tab.1.bottom/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083386" />
-    <state width="1398" height="300" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1599060382085" />
+    <state width="1398" height="232" key="GridCell.Tab.1.bottom/0.23.1440.827@0.23.1440.827" timestamp="1600411492960" />
     <state width="1878" height="285" key="GridCell.Tab.1.bottom/0.23.1920.1007@0.23.1920.1007" timestamp="1599126006831" />
-    <state width="1878" height="285" key="GridCell.Tab.1.center" timestamp="1599126006829">
-      <screen x="0" y="23" width="1920" height="1007" />
+    <state width="1398" height="267" key="GridCell.Tab.1.center" timestamp="1600423449871">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="267" key="GridCell.Tab.1.center/0.0.1440.900/-534.-1440.2560.1440@0.0.1440.900" timestamp="1600423449871" />
+    <state width="1398" height="161" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1600415038694" />
     <state width="1878" height="220" key="GridCell.Tab.1.center/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083384" />
-    <state width="1398" height="300" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1599060382085" />
+    <state width="1398" height="232" key="GridCell.Tab.1.center/0.23.1440.827@0.23.1440.827" timestamp="1600411492959" />
     <state width="1878" height="285" key="GridCell.Tab.1.center/0.23.1920.1007@0.23.1920.1007" timestamp="1599126006829" />
-    <state width="1878" height="285" key="GridCell.Tab.1.left" timestamp="1599126006828">
-      <screen x="0" y="23" width="1920" height="1007" />
+    <state width="1398" height="267" key="GridCell.Tab.1.left" timestamp="1600423449870">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="267" key="GridCell.Tab.1.left/0.0.1440.900/-534.-1440.2560.1440@0.0.1440.900" timestamp="1600423449870" />
+    <state width="1398" height="161" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1600415038694" />
     <state width="1878" height="220" key="GridCell.Tab.1.left/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083383" />
-    <state width="1398" height="300" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1599060382084" />
+    <state width="1398" height="232" key="GridCell.Tab.1.left/0.23.1440.827@0.23.1440.827" timestamp="1600411492959" />
     <state width="1878" height="285" key="GridCell.Tab.1.left/0.23.1920.1007@0.23.1920.1007" timestamp="1599126006828" />
-    <state width="1878" height="285" key="GridCell.Tab.1.right" timestamp="1599126006830">
-      <screen x="0" y="23" width="1920" height="1007" />
+    <state width="1398" height="267" key="GridCell.Tab.1.right" timestamp="1600423449871">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="267" key="GridCell.Tab.1.right/0.0.1440.900/-534.-1440.2560.1440@0.0.1440.900" timestamp="1600423449871" />
+    <state width="1398" height="161" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1600415038695" />
     <state width="1878" height="220" key="GridCell.Tab.1.right/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1598534083384" />
-    <state width="1398" height="300" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1599060382085" />
+    <state width="1398" height="232" key="GridCell.Tab.1.right/0.23.1440.827@0.23.1440.827" timestamp="1600411492960" />
     <state width="1878" height="285" key="GridCell.Tab.1.right/0.23.1920.1007@0.23.1920.1007" timestamp="1599126006830" />
-    <state x="229" y="75" key="SettingsEditor" timestamp="1598455160735">
+    <state x="229" y="23" width="1024" height="827" key="SettingsEditor" timestamp="1600138161079">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
+    <state x="229" y="23" width="1024" height="827" key="SettingsEditor/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1600138161079" />
     <state x="229" y="75" key="SettingsEditor/0.23.1440.827@0.23.1440.827" timestamp="1598455160735" />
     <state x="100" y="123" width="1240" height="627" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598526340417">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="100" y="123" width="1240" height="627" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.827@0.23.1440.827" timestamp="1598526340417" />
-    <state x="399" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1599141377422">
-      <screen x="0" y="23" width="1440" height="827" />
+    <state x="399" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1600411522679">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="399" y="268" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1600411522679" />
     <state x="399" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1599102372156" />
     <state x="399" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.827@0.23.1440.827" timestamp="1599141377422" />
-    <state x="513" y="207" width="894" height="824" key="search.everywhere.popup" timestamp="1599126153150">
-      <screen x="0" y="23" width="1920" height="1007" />
+    <state x="385" y="164" width="671" height="737" key="search.everywhere.popup" timestamp="1600400986710">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="385" y="164" width="671" height="737" key="search.everywhere.popup/0.0.1440.900/-534.-1440.2560.1440@0.0.1440.900" timestamp="1600400986710" />
     <state x="385" y="174" width="670" height="676" key="search.everywhere.popup/0.23.1440.827/-534.-1417.2560.1417@0.23.1440.827" timestamp="1599099493654" />
     <state x="385" y="174" width="670" height="676" key="search.everywhere.popup/0.23.1440.827@0.23.1440.827" timestamp="1596862853793" />
     <state x="513" y="207" width="894" height="824" key="search.everywhere.popup/0.23.1920.1007@0.23.1920.1007" timestamp="1599126153150" />

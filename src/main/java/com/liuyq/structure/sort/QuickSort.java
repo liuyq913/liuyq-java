@@ -11,6 +11,7 @@ import java.util.Arrays;
  * q为分区点
  * 递归公式：quick_sort[p..r] = quick_sort[p..q-1] + quick_sort[q+1.。r]
  * 终止条件: p> = r
+ * </p>
  */
 public class QuickSort {
 
@@ -61,6 +62,4 @@ public class QuickSort {
         Integer[] a = {2, 3, 4, 5, 6, 7}; //完全有序的情况是：第一次的分区点是7  然后 2 3  4  5  6 再分区  分区点为6   每次都是  i 和 j位置上的数据交换
         quick_sort(a, 6);
     }
-
-
 }
