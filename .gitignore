@@ -25,7 +25,6 @@ disconf
 *.iml
 .idea/
 .idea/**
-
 # maven ignore
 target
 
