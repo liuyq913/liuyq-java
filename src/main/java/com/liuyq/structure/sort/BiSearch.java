@@ -6,7 +6,8 @@ import org.omg.PortableInterceptor.INACTIVE;
 /**
  * Created by liuyq on 2019/9/24.
  * 底层是数组
- * 时间复杂都是 O(logn) 查询范围 从开始的 n  n/2  n/4 n/8 ------n/2^k  k就是总共拆分了多少次，每一次拆分就是两个值的比较，所以时间复杂都是O(1) 所以 k= logn
+ * 时间复杂都是 O(logn) 查询范围 从开始的 n  n/2  n/4 n/8 ------n/2^k  k就是总共拆分了多少次，
+ * 每一次拆分就是两个值的比较，所以时间复杂都是O(1) 所以 k= logn
  */
 public class BiSearch {
 

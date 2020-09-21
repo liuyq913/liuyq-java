@@ -4,6 +4,8 @@ package com.liuyq.structure.tree;
  * Created by liuyq on 2019/7/21.
  * <p>
  * 二叉查找树 : 节点的右边大于根节点，左边小于根节点
+ *
+ * 左<中<右
  */
 public class BinarySearchTree {
     //根节点
@@ -51,7 +53,7 @@ public class BinarySearchTree {
     /**
      * 删除节点
      * 三种情况：
-     * (1)没有子节点， 直接删除
+     *  (1)没有子节点， 直接删除
      * （2）只有一个子节点，把要删除的父节点指到要删除的子节点。
      * （3）要删除的有两个子节点，要删除节点的右节点的最小值（没有左节点），和要删除节点交换位置，然后根据（1）（2）来删除节点
      *
@@ -62,6 +64,7 @@ public class BinarySearchTree {
         Node p = tree;  //要删除的节点
         Node pp = null; //要删除的父节点
 
+        //找节点
         while (p != null && p.data != data) {
             pp = p;
             if (p.data > data) {

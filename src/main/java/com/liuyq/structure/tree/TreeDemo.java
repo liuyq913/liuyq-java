@@ -17,7 +17,9 @@ package com.liuyq.structure.tree;
  *    数组存储   [null, 7 , 5 ,6 ,4, 2, 1]
  *                0   1   2  3   4  5  6
  *      下标为 i 的节点，那么 2*i 就是左子节点， 2*i+1就是右子节点
- *    几种遍历方式demo（数组存储)
+ *     几种遍历方式demo（数组存储)
+ *
+ *     时间复杂都是O(n)
  */
 public class TreeDemo {
     private Node root;

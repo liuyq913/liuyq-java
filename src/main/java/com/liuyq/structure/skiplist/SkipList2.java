@@ -7,6 +7,8 @@ import java.util.Random;
  * 2，本类是参考作者zheng ，自己学习，优化了添加方法
  * 3，看完这个，我觉得再看ConcurrentSkipListMap 源码，会有很大收获
  * Author：ldb
+ *
+ * 跳表的时间复杂都也是O(logn) 与二分查找的时间复杂的一样
  */
 public class SkipList2 {
 
