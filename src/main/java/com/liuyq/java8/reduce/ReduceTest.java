@@ -37,7 +37,7 @@ public class ReduceTest {
 
 
 
-        List<Model> models = modelList.stream().sorted(Comparator.comparing(Model::getPrice)).collect(Collectors.toList());
+        List<Model> models = modelList.stream().parallel().sorted(Comparator.comparing(Model::getPrice)).collect(Collectors.toList());
 
         Map<Double, List<Model>> maps = models.stream().collect(Collectors.groupingBy(t -> t.getPrice()));
 
