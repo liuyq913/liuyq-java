@@ -7,7 +7,8 @@ package com.liuyq.structure.tree;
  *
  * 左<中<右
  */
-public class BinarySearchTree {
+public class
+BinarySearchTree {
     //根节点
     private Node tree;
 

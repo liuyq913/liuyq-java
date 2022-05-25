@@ -40,46 +40,42 @@ public class BM {
      * @param a 主串
      * @param b 模式串
      */
-    private int bm(char[] a, char[] b) {
-        // 散列表
-        int[] bc = new int[SIZE];
-        int bIndex = b.length - 1; //模式串的下标
-        int aIndex = a.length - 1; //主串的下标
-
-        // 构建散列表
-        generateBC(b, bc);
-
-        // j 表示子串和主串对齐的第一个字符
-        int j = 0;
-
-        while (j < aIndex - bIndex) {
-
-            // 模式串的最后一个位置
-            int i;
-            for (i = bIndex; i >= 0; i--) {
-                // j+i 是对比主串的位置
-                if (b[j + i] != a[i]) {
-                    break;
-                }
+// a,b表示主串和模式串；n，m表示主串和模式串的长度。
+    public int bm(char[] a, int n, char[] b, int m) {
+        int[] bc = new int[SIZE]; // 记录模式串中每个字符最后出现的位置
+        generateBC(b, bc); // 构建坏字符哈希表
+        int[] suffix = new int[m];
+        boolean[] prefix = new boolean[m];
+        generateGS(b, m, suffix, prefix);
+        int i = 0; // j表示主串与模式串匹配的第一个字符
+        while (i <= n - m) {
+            int j;
+            for (j = m - 1; j >= 0; --j) { // 模式串从后往前匹配
+                if (a[i + j] != b[j]) break; // 坏字符对应模式串中的下标是j
             }
-
-            // 找到了位置
-            if (i < 0) {
-                return j;
+            if (j < 0) {
+                return i; // 匹配成功，返回主串与模式串第一个匹配的字符的位置
             }
-            //找到坏字符在在模式串下的位置
-            int x1 = bc[a[i]]; // 坏字符下标
-
-            // 移动模式串
-            // 修改 j的值来改变j 在主串的和模式串第一个值的对应的值，
-            // 模式串无需移动，只是改变主串的相对开始匹配的位置
-            j = j + i - x1;
-
-
+            int x = j - bc[(int) a[i + j]];
+            int y = 0;
+            if (j < m - 1) { // 如果有好后缀的话
+                y = moveByGS(j, m, suffix, prefix);
+            }
+            i = i + Math.max(x, y);
         }
-
-        // 没找到
         return -1;
+    }
+
+    // j表示坏字符对应的模式串中的字符下标; m表示模式串长度
+    private int moveByGS(int j, int m, int[] suffix, boolean[] prefix) {
+        int k = m - 1 - j; // 好后缀长度
+        if (suffix[k] != -1) return j - suffix[k] + 1;
+        for (int r = j + 2; r <= m - 1; ++r) {
+            if (prefix[m - r] == true) {
+                return r;
+            }
+        }
+        return m;
     }
 
 
@@ -89,7 +85,7 @@ public class BM {
      */
 
 // b表示模式串，m表示长度，suffix，prefix数组事先申请好了
-    private void generateGS(char[] b, int m, int[] suffix, boolean[] prefix) {
+    public static void generateGS(char[] b, int m, int[] suffix, boolean[] prefix) {
         for (int i = 0; i < m; ++i) { // 初始化
             suffix[i] = -1;
             prefix[i] = false;
@@ -97,12 +93,23 @@ public class BM {
         for (int i = 0; i < m - 1; ++i) { // b[0, i]
             int j = i;
             int k = 0; // 公共后缀子串长度
-            while (j >= 0 && b[j] == b[m-1-k]) { // 与b[0, m-1]求公共后缀子串
+            while (j >= 0 && b[j] == b[m - 1 - k]) { // 与b[0, m-1]求公共后缀子串
                 --j;
                 ++k;
-                suffix[k] = j+1; //j+1表示公共后缀子串在b[0, i]中的起始下标
+                suffix[k] = j + 1; //j+1表示公共后缀子串在b[0, i]中的起始下标
             }
             if (j == -1) prefix[k] = true; //如果公共后缀子串也是模式串的前缀子串
         }
+
+
+        System.out.println(suffix);
+        System.out.println(prefix);
+    }
+
+    public static void main(String[] args) {
+
+        String ms = "cabcab";
+        generateGS(ms.toCharArray(), ms.length(), new int[6], new boolean[6]);
+
     }
 }

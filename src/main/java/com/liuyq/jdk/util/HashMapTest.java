@@ -66,18 +66,43 @@ public class HashMapTest {
 
     @Test
     public void test7() {
-       String s = "hashMap";
+        String s = "hashMap";
 
-       int hashCodes = s.hashCode();
-        System.out.println("hashCode = "+hashCodes);
+        int hashCodes = s.hashCode();
+        System.out.println("hashCode = " + hashCodes);
 
-        int rightMove =  hashCodes >>> 16;
+        int rightMove = hashCodes >>> 16;
 
-        System.out.println("rightMove = " +rightMove);
+        System.out.println("rightMove = " + rightMove);
 
         int yihuo = hashCodes ^ rightMove;  //异或规则：0^0 = 0 !^0 = 1 0 ^1 = 1  !^1 = 1
 
-        System.out.println("异或后的十进制值 =" +yihuo);
+        System.out.println("异或后的十进制值 =" + yihuo);
+
+    }
+
+
+    @Test
+    public void test_8() {
+        HashMap<Integer, String> map = new HashMap<Integer, String>(2, 0.75f);
+        map.put(5, "C");
+
+        new Thread("Thread1") {
+            public void run() {
+                map.put(7, "B");
+                System.out.println(map);
+            }
+
+            ;
+        }.start();
+        new Thread("Thread2") {
+            public void run() {
+                map.put(3, "A");
+                System.out.println(map);
+            }
+
+            ;
+        }.start();
 
     }
 }
