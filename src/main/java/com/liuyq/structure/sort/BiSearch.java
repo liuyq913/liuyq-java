@@ -1,7 +1,6 @@
 package com.liuyq.structure.sort;
 
 import org.junit.Test;
-import org.omg.PortableInterceptor.INACTIVE;
 
 /**
  * Created by liuyq on 2019/9/24.

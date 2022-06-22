@@ -1,7 +1,6 @@
 package com.liuyq.java8.consumer;
 
 import com.google.common.collect.Lists;
-import org.omg.CORBA.INTERNAL;
 
 import java.util.Arrays;
 import java.util.List;
