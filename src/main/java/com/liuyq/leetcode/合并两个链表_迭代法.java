@@ -11,7 +11,7 @@ import java.util.List;
  * 请你将list1中下标从 a 到 b 的全部节点都删除，并将list2接在被删除节点的位置。
  * @date 2022/6/24 3:27 下午
  */
-public class 合并两个链表 {
+public class 合并两个链表_迭代法 {
 
     public static ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
 

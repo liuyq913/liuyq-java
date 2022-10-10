@@ -13,6 +13,10 @@ public class Main {
         return m + 1;
     }
 
+    public Main(){
+        System.out.println("初始化了");
+    }
+
 
     String zijema = """
             Classfile /Users/sright/Documents/workspace/liuyq-java/src/main/java/com/liuyq/jvm/Main.class  //文件路径

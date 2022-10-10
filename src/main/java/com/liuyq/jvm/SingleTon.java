@@ -8,6 +8,8 @@ package com.liuyq.jvm;
  */
 public class SingleTon {
     private static SingleTon singleTon = new SingleTon();
+
+    private Main main = new Main();
     public static int count1;
     public static int count2 = 0;
 
@@ -21,8 +23,9 @@ public class SingleTon {
     }
 
     public static void main(String[] agrs) {
-        SingleTon singleTon = SingleTon.getInstance();
-        System.out.println("count1=" + singleTon.count1);
-        System.out.println("count2=" + singleTon.count2);
+        //SingleTon singleTon = SingleTon.getInstance();
+        SingleTon singleTon1 = new SingleTon();
+      //  System.out.println("count1=" + singleTon.count1);
+       // System.out.println("count2=" + singleTon.count2);
     }
 }
